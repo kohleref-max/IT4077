@@ -1,0 +1,10 @@
+<Sysmon schemaversion="4.82">
+<!-- Capture all hashes -->
+<HashAlgorithms>*</HashAlgorithms>
+<EventFiltering>
+<RuleGroup name="" groupRelation="or">
+<ProcessCreate onmatch="exclude">
+</ProcessCreate>
+</RuleGroup>
+</EventFiltering>
+</Sysmon>

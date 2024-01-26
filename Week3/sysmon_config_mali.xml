@@ -1,0 +1,11 @@
+<Sysmon schemaversion="4.82">
+<!-- Capture all hashes -->
+<HashAlgorithms>*</HashAlgorithms>
+<EventFiltering>
+<RuleGroup name="" groupRelation="or">
+<ProcessCreate onmatch="include">
+<Image condition=”contains”>malicious.exe</Image>
+</ProcessCreate>
+</RuleGroup>
+</EventFiltering>
+</Sysmon>
