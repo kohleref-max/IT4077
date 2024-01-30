@@ -1,0 +1,15 @@
+<Sysmon schemaversion="4.90">
+	<HashAlgorithms>md5,sha256,IMPHASH</HashAlgorithms>
+	<CheckRevocation/> 
+	<EventFiltering>
+	<RuleGroup name="Detecting mimikatz" groupRelation="or">
+		<ProcessCreate onmatch="include">
+			<Image condition="contains">mimi</Image>
+			<Image condition="contains">mimikatz</Image>
+			<Image condition="contains">mimidogz</Image>
+		</ProcessCreate>
+	</RuleGroup>
+	</EventFiltering>
+</Sysmon>
+	
+	
