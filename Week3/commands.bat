@@ -1,6 +1,8 @@
 echo "[+] Extracting sysmon"
 set /p "hit enter to continue..."
-powershell Expand-Archive -Path Sysmon.zip
+powershell Expand-Archive -Path C:\Users\%USERNAME%\Downloads\Sysmon.zip
 echo "[*] Sysmon extracted"
 set /p "hit enter to continue to install Sysmon..."
-Sysmon\sysmon.exe -i sysmon_config.xml
+C:\Users\%USERNAME%\Downloads\Sysmon\sysmon.exe -i C:\Users\%USERNAME%\Downloads\sysmon_config.xml
+set /p "hit enter to reconfigure sysmon..."
+C:\Users\%USERNAME%\Downloads\Sysmon\sysmon.exe -c C:\Users\%USERNAME%\Downloads\sysmon_config_mali.xml
