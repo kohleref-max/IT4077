@@ -4,7 +4,7 @@
 <EventFiltering>
 <RuleGroup name="" groupRelation="or">
 <ProcessCreate onmatch="include">
-<Image condition=”contains”>malicious.exe</Image>
+<Image condition="contains">malicious.exe</Image>
 </ProcessCreate>
 </RuleGroup>
 </EventFiltering>
