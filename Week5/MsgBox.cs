@@ -9,7 +9,7 @@ namespace IT4077
 		{
 			ETWcanSeeClassNamesandLoads();
 		}
-		private static void ETWcanSeeClassNamesandLoads
+		private static void ETWcanSeeClassNamesandLoads()
 		{
 			MessageBox.Show("Executing","Code");
 		}
