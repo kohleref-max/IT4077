@@ -1,5 +1,5 @@
 using System;
-using System.Window.Forms;
+using System.Windows.Forms;
 
 namespace IT4077
 {
