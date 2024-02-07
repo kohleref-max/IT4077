@@ -1,3 +1,4 @@
+@echo off
 echo "[+] Starting Week5 Assignment"
 echo "[+] Hit Enter to begin..."
 set /p a="hit enter to continue..."
