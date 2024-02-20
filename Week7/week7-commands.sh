@@ -27,7 +27,7 @@ echo "[+] Enter your ip address"
 ifconfig eth0
 read ipaddr
 wget https://raw.githubusercontent.com/EvaStanAccount/IT4077/Main/Week7/sites_available_template -O /root/sites_available_template
-sed -i "s/YOUR_IP/$ipaddr/g" /root/sites-available/template
+sed -i "s/YOUR_IP/$ipaddr/g" /root/sites_available_template
 mv /root/sites_available_template /etc/nginx/sites-available/$ipaddr
 ln -s /etc/nginx/sites-available/$ipaddr /etc/nginx/sites-enabled/$ipaddr
 nginx -t
