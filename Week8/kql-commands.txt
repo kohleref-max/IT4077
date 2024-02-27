@@ -1,0 +1,7 @@
+process
+Process Create
+event.provider: Microsoft-Windows
+event.provider: Microsoft-Windows-Security
+event.provider: *Sysmon
+event.provider: *Sysmon and event.code: 1
+event.action: *ProcessCreate* or *ProcessTerminate*
