@@ -1,0 +1,16 @@
+title: Malicious File Execution
+id: f62d8927-2614-429c-88dc-97b1988095c8
+status: test
+description: execution of a test malicious process    
+author: Nick Spagnola
+date: 2024/3/5
+logsource:
+    category: process_creation
+    serviec: sysmon
+    product: windows
+detection:
+    selection:
+        - winlog.event_data.Image|endswith: 'InstallUtil.exe'
+    condition: selection
+falsepositives:
+    - Unknown
